@@ -5,7 +5,7 @@ CREATE TABLE "user" (
     "updated_at" TIMESTAMP(3) NOT NULL,
     "email" VARCHAR(255) NOT NULL,
     "password" CHAR(60) NOT NULL,
-    "name" VARCHAR(100) NOT NULL,
+    "name" VARCHAR(100),
     "is_active" BOOLEAN NOT NULL DEFAULT false,
 
     CONSTRAINT "user_pkey" PRIMARY KEY ("id")
